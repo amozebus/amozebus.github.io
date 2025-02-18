@@ -1,0 +1,77 @@
+:root {
+    --vt-c-white: #ffffff;
+    --vt-c-white-soft: #f8f8f8;
+    --vt-c-white-mute: #f2f2f2;
+  
+    --vt-c-black: #181818;
+    --vt-c-black-soft: #222222;
+    --vt-c-black-mute: #282828;
+  
+    --vt-c-text-light: var(--vt-c-black);
+    --vt-c-text-dark: var(--vt-c-white);
+
+    --color-background: var(--vt-c-white);
+  
+    --color-border: var(--vt-c-white-soft);
+    --color-border-hover: var(--vt-c-white-mute);
+
+    --color-text: var(--vt-c-text-light);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+      --color-background: var(--vt-c-black);
+
+      --color-border: var(--vt-c-black-soft);
+      --color-border-hover: var(--vt-c-black-mute);
+
+      --color-text: var(--vt-c-text-dark);
+    }
+}
+
+body {
+    font-family:
+    InterVariable;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    min-width: 500px;
+}
+
+h2,
+h3 {
+    font-weight: 400;
+}
+
+.list {
+    margin: 10px;
+}
+
+.list-item {
+    display: inline-block;
+    width: 300px;
+    margin: 5px 10px;
+    border: 3px solid;
+    border-radius: 10px;
+    border-color: var(--color-border);
+}
+
+.list-item:hover {
+    border-color: var(--color-border-hover);
+}
+
+.list-item img {
+    display: block;
+    height: 100px;
+    width: auto;
+    margin: 5px auto;
+}
+
+#github-logo {
+    content: url("../img/github.png");
+}
+
+@media (prefers-color-scheme: dark) {
+    #github-logo {
+        content: url("../img/github-light.png");
+    }
+}
