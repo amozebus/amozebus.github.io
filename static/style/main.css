@@ -15,6 +15,8 @@
     --color-border: var(--vt-c-white-soft);
     --color-border-hover: var(--vt-c-white-mute);
 
+    --color-inner-shadow: var(--vt-c-white-mute);
+
     --color-text: var(--vt-c-text-light);
 }
 
@@ -24,6 +26,8 @@
 
       --color-border: var(--vt-c-black-soft);
       --color-border-hover: var(--vt-c-black-mute);
+
+      --color-inner-shadow: var(--vt-c-black-mute);
 
       --color-text: var(--vt-c-text-dark);
     }
@@ -49,10 +53,13 @@ h3 {
 .list-item {
     display: inline-block;
     width: 300px;
-    margin: 5px 10px;
-    border: 3px solid;
-    border-radius: 10px;
+    height: 100px;
+    margin: 5px;
+    border: 2px solid;
+    border-radius: 15px;
     border-color: var(--color-border);
+    box-shadow: inset 0 0 20px 0 var(--color-border);
+    transition: box-shadow 0.3s ease-out;
 }
 
 .list-item:hover {
@@ -60,10 +67,64 @@ h3 {
 }
 
 .list-item img {
-    display: block;
-    height: 100px;
+    display: inline-block;
+    height: 90%;
     width: auto;
     margin: 5px auto;
+}
+
+#github:hover {
+    box-shadow:
+        inset 0 0 20px 0 var(--color-inner-shadow),
+        0 0 20px 0 #1b1f24;
+}
+
+#crudly:hover {
+    box-shadow:
+        inset 0 0 20px 0 var(--color-inner-shadow),
+        0 0 20px 0 #8967b2;
+}
+
+#python:hover {
+    box-shadow:
+        inset 0 0 20px 0 var(--color-inner-shadow),
+        0 0 20px 0 #3771a1;
+}
+
+#ts:hover {
+    box-shadow:
+        inset 0 0 20px 0 var(--color-inner-shadow),
+        0 0 20px 0 #3178c6;
+}
+
+#html:hover {
+    box-shadow:
+        inset 0 0 20px 0 var(--color-inner-shadow),
+        0 0 20px 0 #dd6720;
+}
+
+#css:hover {
+    box-shadow:
+        inset 0 0 20px 0 var(--color-inner-shadow),
+        0 0 20px 0 #600994;
+}
+
+#fastapi:hover {
+    box-shadow:
+        inset 0 0 20px 0 var(--color-inner-shadow),
+        0 0 20px 0 #009688;
+}
+
+#nestjs:hover {
+    box-shadow:
+        inset 0 0 20px 0 var(--color-inner-shadow),
+        0 0 20px 0 #d62644;
+}
+
+#vuejs:hover {
+    box-shadow:
+        inset 0 0 20px 0 var(--color-inner-shadow),
+        0 0 20px 0 #56b983;
 }
 
 #github-logo {
@@ -71,6 +132,12 @@ h3 {
 }
 
 @media (prefers-color-scheme: dark) {
+    #github:hover {
+        box-shadow:
+            inset 0 0 20px 0 var(--color-inner-shadow),
+            0 0 15px 0px #ffffff;
+    }
+
     #github-logo {
         content: url("../img/github-light.png");
     }
