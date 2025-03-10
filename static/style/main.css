@@ -48,15 +48,8 @@
       InterVariable,
       sans-serif;
     font-size: 16px;
-}
-
-body {
     background-color: var(--color-background);
     color: var(--color-text);
-    min-width: 450px;
-}
-
-#page {
     min-width: 450px;
 }
 
@@ -94,7 +87,7 @@ a {
         linear-gradient(transparent calc(50% - 1px), var(--color-grid) 50%, transparent calc(50% + 1px) 100%),
         linear-gradient(to right, transparent calc(50% - 1px), var(--color-grid) 50%, transparent calc(50% + 1px) 100%);
     background-size: 100% 100%, 2em 2em, 2em 2em;
-    border-radius: 15px;
+    border-radius: 1rem;
 }
 
 .list-item {
@@ -116,10 +109,10 @@ a {
 }
 
 .list-item img {
-    height: 90px;
+    height: 11vh;
     width: auto;
 
-    margin: 5px auto;
+    margin: 0.1em auto;
     transition: transform 0.3s ease-out;
 }
 
@@ -128,7 +121,7 @@ a {
 }
 
 #title {
-    margin: 5px 0;
+    margin: 0.1em 0;
 
     font-size: clamp(5rem, 10vw, 8rem);
     font-weight: 800;
@@ -145,7 +138,7 @@ a {
 
     border-radius: 100%;
 
-    margin-top: 3rem;
+    margin-top: 3em;
 }
 
 #github-logo {
