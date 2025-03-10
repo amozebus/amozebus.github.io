@@ -53,7 +53,11 @@
 body {
     background-color: var(--color-background);
     color: var(--color-text);
-    min-width: 500px;
+    min-width: 450px;
+}
+
+#page {
+    min-width: 450px;
 }
 
 a {
@@ -126,12 +130,12 @@ a {
 #title {
     margin: 5px 0;
 
-    font-size: clamp(6rem, 10vw, 8rem);
+    font-size: clamp(5rem, 10vw, 8rem);
     font-weight: 800;
 }
 
 #sub {
-    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    font-size: clamp(1.2rem, 2.5vw, 2rem);
     font-weight: 300;
 }
 
