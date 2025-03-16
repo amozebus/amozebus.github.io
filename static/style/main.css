@@ -115,7 +115,7 @@ a {
 
 .list-item img {
     height: 90%;
-    max-height: clamp(5rem, 9vh, 30rem);
+    max-height: clamp(5rem, 9vh, 28rem);
 
     margin: 0.1em auto;
     transition: transform 0.3s ease-out;
